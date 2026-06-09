@@ -1,13 +1,16 @@
-- category: repos
-  items:
-    - title: polytray
-      url: https://github.com/cybermaak/polytray
-      icon: https://raw.githubusercontent.com/cybermaak/polytray/caa2b943b83e3fbba3c61ce6adf696468ca51924/build/icon.png
-
-    - title: jq proxy
-      url: https://github.com/cybermaak/jq-proxy
-      icon: simple-icons:googlenews
-
-    - title: spi stats
-      url: https://github.com/cybermaak/spi-stats
-      icon: simple-icons:googlenews
+fixed-button-width: false # Set to true/false
+icon-position: left # Set to left/right
+buttons:
+  - category: repos
+    items:
+      - title: polytray
+        url: https://github.com/cybermaak/polytray
+        icon: https://raw.githubusercontent.com/cybermaak/polytray/caa2b943b83e3fbba3c61ce6adf696468ca51924/build/icon.png
+  
+      - title: jq proxy
+        url: https://github.com/cybermaak/jq-proxy
+        icon: simple-icons:googlenews
+  
+      - title: spi stats
+        url: https://github.com/cybermaak/spi-stats
+        icon: simple-icons:googlenews
