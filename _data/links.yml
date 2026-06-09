@@ -1,22 +1,13 @@
-- category: Blogs
+- category: repos
   items:
-    - title: Example
-      url: https://www.example.com
-      icon: ri:film-fill # Icons are optional.
-      tag: New
+    - title: polytray
+      url: https://github.com/cybermaak/polytray
+      icon: https://raw.githubusercontent.com/cybermaak/polytray/caa2b943b83e3fbba3c61ce6adf696468ca51924/build/icon.png
 
-    - title: Example 2
-      url: https://www.example.org
+    - title: jq proxy
+      url: https://github.com/cybermaak/jq-proxy
       icon: simple-icons:googlenews
 
-- category: Products
-  items:
-    - title: Example 3
-      url: https://www.example.com
-
-- category: Works
-  items:
-    - title: Example 4
-      url: https://www.example.org
-      icon: clarity:language-solid
-      tag: Sale
+    - title: spi stats
+      url: https://github.com/cybermaak/spi-stats
+      icon: simple-icons:googlenews
