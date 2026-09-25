@@ -5,6 +5,7 @@
       description: 'Read the Quran and follow your khatmas at your own pace with Khatmah for iPhone.',
       siteNav: 'Site', brand: 'Khatmah', allApps: 'All apps',
       switchLabel: 'Switch to Arabic', switchText: 'العربية', storeAction: 'Download Khatmah on the App Store',
+      socialAlt: 'Khatmah app icon and name beside an iPhone Quran reading screen and App Store download badge',
       iconAlt: 'Khatmah app icon', badgeAlt: 'Download on the App Store', availability: 'Free for iPhone',
       heroLead: 'Quran reading and khatma tracking, at your own pace.',
       heroSupport: 'Read from a familiar Mushaf, keep your place, and continue whenever you’re ready.',
@@ -41,6 +42,7 @@
       description: 'اقرأ القرآن وتابع ختماتك بالطريقة التي تناسبك مع تطبيق ختمة على iPhone.',
       siteNav: 'تصفح الموقع', brand: 'ختمة', allApps: 'جميع التطبيقات',
       switchLabel: 'التبديل إلى الإنجليزية', switchText: 'English', storeAction: 'تنزيل تطبيق ختمة من \u2068App Store\u2069',
+      socialAlt: 'أيقونة ختمة بجانب شاشة قراءة القرآن على iPhone وشارة التنزيل من App Store',
       iconAlt: 'أيقونة تطبيق ختمة', badgeAlt: 'تنزيل من \u2068App Store\u2069', availability: 'متاح مجانًا على \u2068iPhone\u2069',
       heroLead: 'اقرأ القرآن وتابع ختماتك بالطريقة التي تناسبك.',
       heroSupport: 'مصحف مألوف، وموضع محفوظ، وختمة تتابعها حين تشاء.',
@@ -94,7 +96,12 @@
     document.documentElement.dir = next === 'ar' ? 'rtl' : 'ltr';
     document.title = t.title;
     description.content = t.description;
-    document.querySelector('meta[property="og:image:alt"]').content = t.iconAlt;
+    // Static HTML remains Arabic for crawlers that do not execute JavaScript.
+    const socialImage = `https://cybermaak.dev/khatmah/assets/social-card-${next}-v1.png`;
+    document.querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]').forEach(meta => { meta.content = socialImage; });
+    document.querySelectorAll('meta[property="og:image:alt"], meta[name="twitter:image:alt"]').forEach(meta => { meta.content = t.socialAlt; });
+    document.querySelector('meta[property="og:locale"]').content = next === 'ar' ? 'ar_SA' : 'en_US';
+    document.querySelector('meta[property="og:locale:alternate"]').content = next === 'ar' ? 'en_US' : 'ar_SA';
     document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach(meta => { meta.content = t.title; });
     document.querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]').forEach(meta => { meta.content = t.description; });
     document.querySelectorAll('[data-l10n]').forEach(element => { element.textContent = t[element.dataset.l10n]; });

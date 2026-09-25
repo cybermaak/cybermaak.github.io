@@ -1,0 +1,50 @@
+{
+  "created": "2026-09-25",
+  "status": "concept 11C selected for publication",
+  "canvas": [
+    1200,
+    630
+  ],
+  "website_source_commit": "7221070bd032904162d4d889a3546cc3ab24a558",
+  "macOS": "26.6.2",
+  "renderer_sha256": "750cb82967c55de6de1f4ae826807d5ef095cc2d9a844dc9c131c31373936401",
+  "assets": {
+    "icon.jpg": "8fc409b0b9d77094f199b13a0dccebf9d1c6114cb0aa7dd6fd3cfca074bb1f70",
+    "page.png": "fdfa86e0f0f60c9c1f780132cba22d45f4ecf04658a0a5ee7bdca7b4f98347c5",
+    "page-ar.png": "9da5ebddf69482e6d416b73f3257ba9ecbb86a2fd8a75a03bc2f18e435c68709",
+    "iphone-18-pro-max-black-portrait.png": "13fc8a8f0bc612f50c00d073b12aefa87bce1e4618fbdd3aa882438ae171e2be",
+    "app-store-badge.svg": "8f5361e536bf257b9b697c7399f0e4d88ec15a0c9d349c66d2e715d54c05ac28",
+    "app-store-badge-ar.svg": "40e4950e78183878be8b9744d0b211e7237975f5597f7038ae825357751eb862"
+  },
+  "fonts": {
+    "/System/Library/Fonts/GeezaPro.ttc": "5b4309f8d596abee520c0826885a39483a16fb244489d2c313322575df4b04a2",
+    "/System/Library/Fonts/HelveticaNeue.ttc": "a43317500f5c8086ebbe479b32e86f53ce7c075c14283aa9894cc23be5bfd8e2",
+    "/System/Library/Fonts/Supplemental/Georgia.ttf": "4f54eb299fccea7f103edeb0d92437359bfd4441811d53222b82b335369f6218"
+  },
+  "outputs": [
+    {
+      "file": "11c-en.png",
+      "width": 1200,
+      "height": 630,
+      "bytes": 917692,
+      "sha256": "d8596da83fea350b6626df310e09d867fd5fc99920973f22ce8c288c5699db3e"
+    },
+    {
+      "file": "11c-ar.png",
+      "width": 1200,
+      "height": 630,
+      "bytes": 962022,
+      "sha256": "be822bdbfbce8bc73c33f297ac0a06958a544fc11c1e72f6da610ca19696c971"
+    },
+    {
+      "file": "11c-pair.png",
+      "width": 1200,
+      "height": 1284,
+      "bytes": 1881255,
+      "sha256": "f952957ae65dce3711b965aebace77e1dacace879feb53e9911747b6db384352"
+    }
+  ],
+  "repeat_render_byte_identical": true,
+  "renderer": "render-11c.swift",
+  "english_unchanged_from": "11b-en.png"
+}

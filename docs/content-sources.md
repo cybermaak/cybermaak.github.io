@@ -109,3 +109,16 @@ after fixing narrow English title overflow. First-visit Arabic, saved English,
 explicit Arabic override, keyboard switching, URL query/fragment preservation,
 and header edge coverage were checked. Safari automation stalled; its mobile
 check is incomplete for this refinement and the earlier waiver is not extended.
+
+## Khatmah social preview, 2026-09-25
+
+The owner selected concept 11C: Arabic icon-led identity, an angled iPhone
+reading close-up, and official localized App Store badge; English retains the
+separate app name. The approved 1200 × 630 PNGs are published as
+`khatmah/assets/social-card-{ar,en}-v1.png`. They reuse the existing reviewed
+public 1.1.0 screenshots, icon, bezel, and badges without new capture or claims.
+[Regeneration prompt](design/khatmah/social-cards/CONCEPT-11C.md), fixed renderer,
+and input/output hashes are retained outside the public build. The Arabic
+card is embedded in static HTML for crawlers; browser language changes also
+update the social metadata. Query parameters do not localize static crawler
+responses. Earlier unselected concepts remain local review artifacts.
