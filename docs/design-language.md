@@ -19,8 +19,8 @@ Keep these two related expressions distinct:
 | Product landing pages | An introduction to an app and a route to download it | App identity, readable sans-serif copy, actual screenshots, restrained page structure |
 
 This guide governs the shared website source intended for the main domains.
-It does not imply that `maaktech.dev` already serves the new shared artifact;
-that hosting transition remains separate. Product palettes may differ without
+The owner confirmed the same site is also deployed at `maaktech.dev` and
+chose to retain both copies for now. Product palettes may differ without
 creating a different navigation or maintenance system.
 
 ## Personal homepage: observed tokens
@@ -108,16 +108,20 @@ homepage's terminal identity.
 | English type | Georgia for editorial headings; system sans-serif for copy and controls |
 | Arabic type | Geeza Pro / SF Arabic with appropriate line heights; native copy and RTL layout |
 | Width | 1050px maximum, 24px desktop gutters; one column at 760px and below, at least 16px mobile gutters |
-| Hero | Large product name and reading/tracking promise; two authentic phone screens with equal importance |
+| Hero | App icon beside the large product name and reading/tracking promise; two authentic phone screens with equal importance |
 | Story | Reading views → khatma and saved places → dark/landscape comfort → sharing → app essentials → download |
-| Actions | Plain App Store text link in the hero; one unchanged localized official badge at the bottom; quiet All apps navigation |
+| Actions | One unchanged localized official badge in the hero; plain App Store text link at the bottom; quiet All apps navigation |
 | Media | Still images, eight official device-frame compositions, unframed rendered sharing preview, full-size image links |
 
 Use the genuine English and Arabic media selected by the app SOP. Change text
 direction and alignment without mirroring images. The language switch updates
 visible copy, accessible names, page metadata, screenshots, and badge; it keeps
 the reader's section in view and remembers their choice when storage works.
-Without JavaScript, the English page and download links remain usable.
+Arabic is the default, including the complete no-JavaScript HTML. A valid
+`?lang=ar` or `?lang=en` overrides a saved choice; otherwise use the saved
+choice, then Arabic. Switching updates the URL while retaining other parameters
+and its fragment. The sticky header background and border span the viewport;
+its inner content stays aligned to the page gutters.
 
 Keep Apple's official frames unchanged and align screenshots to their measured
 screen openings with `object-fit: contain`. Do not add shadows, reflections,

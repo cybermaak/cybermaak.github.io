@@ -70,7 +70,7 @@ included in the public artifact.
 | `page{,-ar}.png`, `tracking{,-ar}.png`, `bookmarks{,-ar}.png`, `dark{,-ar}.png`, `landscape{,-ar}.png` | Corresponding English/Arabic 1.1 candidate App Store still exports selected in the design handoff |
 | `focus-{en,ar}.png` | Each locale's reviewed 1.1 `05_FocusMode.png` |
 | `landscape-dark-{en,ar}.png` | Complete frame at 12 seconds from each locale's approved 1.1 Landscape Focus App Preview; source checksums in the design README |
-| `sharing-rendered-preview{,-ar}.png` | Exact 1224 × 930 crop at x=48, y=855 from each locale's `04_QuranSharing.png`; owner confirmation remains a publication check |
+| `sharing-rendered-preview{,-ar}.png` | Exact 1224 × 930 crop at x=48, y=855 from each locale's `04_QuranSharing.png`; owner approved the crop on 2026-09-24 |
 | `icon.jpg` | Same published 512px icon as the original concepts |
 | `app-store-badge{,-ar}.svg` | Unchanged official Apple English and Arabic badges |
 | `iphone-18-pro-max-black-{portrait,landscape}.png` | Unchanged official Apple design-resource PNGs; source and accepted license recorded in the design README |
@@ -87,10 +87,25 @@ and Arabic exports at source checkout `69c7b858ff650c0d92e2e2514b095c3b45a48df4`
 (the later `34299c0` commit changed only the private SOP).
 
 The release-availability check is complete. Follow the remaining
-[publishing checks](publishing.md#khatmah-candidate-before-publication) before
+[publishing checks](publishing.md#khatmah-publication-approval) before
 deploying the website. Product capture procedures remain in the private app
 SOP; none were copied into the website.
 
 The page uses the verified App Store destination, homepage navigation, and
 local full-size media links. Existing support/privacy URLs, App Store metadata,
 and the information Worker remain unchanged.
+
+## Khatmah presentation refinements, 2026-09-24
+
+Reused all 21 approved public assets unchanged; no release claims, app captures,
+or download destinations changed. Arabic is now the default HTML and runtime
+fallback, with explicit `?lang=ar` / `?lang=en` overrides ahead of saved choice.
+The single official badge moves to the hero, the closing CTA becomes a text
+link, the existing published icon also appears beside the main title, and the
+sticky header spans the full viewport with aligned inner content.
+
+Build/link validation and Chromium EN/AR checks at 320/390/430/1200px passed
+after fixing narrow English title overflow. First-visit Arabic, saved English,
+explicit Arabic override, keyboard switching, URL query/fragment preservation,
+and header edge coverage were checked. Safari automation stalled; its mobile
+check is incomplete for this refinement and the earlier waiver is not extended.

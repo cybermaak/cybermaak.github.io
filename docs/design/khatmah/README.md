@@ -289,3 +289,24 @@ keyboard language switching, preference persistence, and full-size link
 targets are correct. The existing Safari/WebKit waiver remains limited to
 this same approved design iteration. The owner subsequently approved the refreshed preview and authorized committing
 and pushing on 2026-09-24.
+
+## Current website refinements, 2026-09-24
+
+The owner requested Arabic by default, URL language overrides, the single
+official badge in the hero with a closing text CTA, a prominent app icon in
+the content, and a full-width sticky header. These changes are implemented
+in `public/khatmah/`; the `04-quiet-editorial-refined.*` files are the historical
+approved reference, not the current source to copy over the website.
+
+Language precedence is valid `?lang=ar` / `?lang=en`, then saved choice, then
+Arabic. The HTML itself is Arabic so it remains complete without JavaScript.
+The switch saves the choice and replaces the URL parameter, retaining other
+query values and fragments. Both CTA destinations and all 21 assets are reused.
+The icon/title row preserves the reading/tracking hierarchy. Header chrome
+spans the viewport while a nested content wrapper preserves alignment.
+
+Chromium responsive and interaction checks are recorded in content sources.
+Safari mobile verification is incomplete after native automation stalled.
+The owner reviewed these refinements and authorized committing and pushing
+them after the responsive checks. Safari mobile verification remains incomplete
+as disclosed during review.

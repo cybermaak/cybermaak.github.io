@@ -45,9 +45,10 @@ repositories retain their old `site/` files for reference and rollback, but thei
 Pages sites are disabled and their `pages.yml` workflows are disabled manually.
 App release workflows are unchanged.
 
-`maaktech.dev` currently has an independent Cloudflare homepage deployment.
-The eventual choice is a full-site proxy to GitHub Pages or a path-preserving
-redirect. This structure does not select or apply that choice.
+The owner confirmed on 2026-09-24 that `maaktech.dev` also serves the homepage
+and all landing pages through its existing Cloudflare deployment, and chose to
+keep both copies for now. `cybermaak.dev` remains canonical. No hosting or DNS
+change is part of the subsequent Khatmah refinements.
 
 `khatmah.maaktech.dev` remains the existing Workers Static Assets information
 site. Its privacy, support, credits, and legacy `.html` links retain their

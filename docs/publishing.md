@@ -19,7 +19,9 @@ on 2026-09-24 to leave Cloudflare unchanged and proceed, and will handle it late
 No Cloudflare settings, Worker code, or domains were changed during this cutover.
 The root-directory publisher is an outstanding follow-up: it can publish this
 public repository's instructions and metadata, and it does not use the Pages
-`dist/` artifact. A future proxy or redirect remains a separate decision.
+`dist/` artifact. The owner subsequently confirmed that `maaktech.dev` also publishes all four
+routes and elected to keep the two copies for now. No further Cloudflare
+changes are requested; the artifact boundary concern above is still recorded.
 
 ## Initial deployment verified
 

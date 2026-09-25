@@ -5,7 +5,7 @@
       description: 'Read the Quran and follow your khatmas at your own pace with Khatmah for iPhone.',
       siteNav: 'Site', brand: 'Khatmah', allApps: 'All apps',
       switchLabel: 'Switch to Arabic', switchText: 'العربية', storeAction: 'Download Khatmah on the App Store',
-      badgeAlt: 'Download on the App Store', availability: 'Free for iPhone',
+      iconAlt: 'Khatmah app icon', badgeAlt: 'Download on the App Store', availability: 'Free for iPhone',
       heroLead: 'Quran reading and khatma tracking, at your own pace.',
       heroSupport: 'Read from a familiar Mushaf, keep your place, and continue whenever you’re ready.',
       heroMedia: 'Actual Khatmah reading and tracking screens',
@@ -41,7 +41,7 @@
       description: 'اقرأ القرآن وتابع ختماتك بالطريقة التي تناسبك مع تطبيق ختمة على iPhone.',
       siteNav: 'تصفح الموقع', brand: 'ختمة', allApps: 'جميع التطبيقات',
       switchLabel: 'التبديل إلى الإنجليزية', switchText: 'English', storeAction: 'تنزيل تطبيق ختمة من \u2068App Store\u2069',
-      badgeAlt: 'تنزيل من \u2068App Store\u2069', availability: 'متاح مجانًا على \u2068iPhone\u2069',
+      iconAlt: 'أيقونة تطبيق ختمة', badgeAlt: 'تنزيل من \u2068App Store\u2069', availability: 'متاح مجانًا على \u2068iPhone\u2069',
       heroLead: 'اقرأ القرآن وتابع ختماتك بالطريقة التي تناسبك.',
       heroSupport: 'مصحف مألوف، وموضع محفوظ، وختمة تتابعها حين تشاء.',
       heroMedia: 'صور حقيقية للقراءة ومتابعة الختمات في تطبيق ختمة',
@@ -79,7 +79,7 @@
   };
   const switcher = document.querySelector('.language-switch');
   const description = document.querySelector('meta[name="description"]');
-  let language = 'en';
+  let language = 'ar';
 
   function setLanguage(next, preservePosition = false) {
     let hashTarget = null;
@@ -94,6 +94,7 @@
     document.documentElement.dir = next === 'ar' ? 'rtl' : 'ltr';
     document.title = t.title;
     description.content = t.description;
+    document.querySelector('meta[property="og:image:alt"]').content = t.iconAlt;
     document.querySelectorAll('meta[property="og:title"], meta[name="twitter:title"]').forEach(meta => { meta.content = t.title; });
     document.querySelectorAll('meta[property="og:description"], meta[name="twitter:description"]').forEach(meta => { meta.content = t.description; });
     document.querySelectorAll('[data-l10n]').forEach(element => { element.textContent = t[element.dataset.l10n]; });
@@ -117,12 +118,18 @@
 
   let saved;
   try { saved = localStorage.getItem('khatmah-language'); } catch (_) { /* Private browsing can deny storage. */ }
-  const initial = saved === 'ar' || saved === 'en' ? saved : (navigator.language?.toLowerCase().startsWith('ar') ? 'ar' : 'en');
+  const requested = new URLSearchParams(location.search).get('lang');
+  const isLanguage = value => value === 'ar' || value === 'en';
+  const initial = isLanguage(requested) ? requested : (isLanguage(saved) ? saved : 'ar');
   setLanguage(initial);
   switcher.hidden = false;
   switcher.addEventListener('click', () => {
     const next = language === 'en' ? 'ar' : 'en';
     setLanguage(next, true);
+    // Keep an explicitly shared language consistent after switching or reloading.
+    const url = new URL(location.href);
+    url.searchParams.set('lang', next);
+    try { history.replaceState(null, '', url); } catch (_) { /* Local file previews may deny history changes. */ }
     try { localStorage.setItem('khatmah-language', next); } catch (_) { /* The switch still works. */ }
   });
 })();
