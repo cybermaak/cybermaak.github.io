@@ -101,8 +101,8 @@ come from the reviewed 1.1 English/Arabic fastlane exports. Focus Scroll uses
 `05_FocusMode.png` in each locale. The sharing images are exact 1224 × 930
 pixel crops at x=48, y=855 of the app-rendered previews visible within each
 locale's `04_QuranSharing.png`. A separate standalone reviewed share export
-was not available, so this crop should be confirmed with the owner before
-final publication. No Quran text or app UI was generated or redrawn. The
+was not available. The owner approved these crops during the final website
+review on 2026-09-24. No Quran text or app UI was generated or redrawn. The
 badges came from Apple's official assets, including the Arabic `ar-ar`
 marketing-tools badge.
 

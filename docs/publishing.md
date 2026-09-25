@@ -21,6 +21,30 @@ The root-directory publisher is an outstanding follow-up: it can publish this
 public repository's instructions and metadata, and it does not use the Pages
 `dist/` artifact. A future proxy or redirect remains a separate decision.
 
+## Initial deployment verified
+
+Website commit `284c5726396833d039fcbf5e792f3e64666a89b3` was published by
+[the successful Website workflow](https://github.com/cybermaak/cybermaak.github.io/actions/runs/36091069842)
+on 2026-09-24 Pacific time (2026-09-25 UTC). Both build and deploy jobs passed.
+
+All 51 live HTTP/content checks passed: the four routes and all 42 deployable
+content files matched the approved build byte for byte, the three product paths
+without trailing slashes resolved correctly, and six unknown or excluded
+repository paths returned 404. The normal HTTP client and browser succeeded;
+an initial Python HTTP client was blocked with 403 and was not used as evidence
+of site failure. Live English/Arabic switching, right-to-left layout, hero media,
+App Store destinations, and return-home navigation passed browser checks.
+
+Khatmah's seven information URLs (root, privacy, support, credits, and three
+`.html` aliases) all returned 200 after redirects. No app repository was committed
+or pushed. Cloudflare remains the owner-deferred follow-up described above.
+
+For future rollback, revert the affected website content while retaining the
+`public/` build boundary and Actions workflow, then publish and verify all four
+routes. Do not blindly revert the initial migration: the legacy commit uses a
+repository-root layout and no longer matches the Actions publishing setup.
+Restoring separate project sites would require a coordinated hosting rollback.
+
 ## Before the first publication
 
 1. Review the local website and product SOP changes. Resolve product page/media
