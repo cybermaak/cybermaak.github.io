@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mohammed Kamel (cybermaak) — Developer · open-source tooling</title>
-  <meta name="description" content="Mohammed Kamel (cybermaak) — developer building small, sharp open-source tools: polytray, maakdown, spi-stats, jq-proxy. Links to GitHub, X, LinkedIn and more.">
+  <title>Mohammed Kamel (cybermaak) — Apps &amp; open-source tools</title>
+  <meta name="description" content="Mohammed Kamel (cybermaak) — developer building apps and open-source tools, including Polytray, Maakdown, and Khatmah.">
   <link rel="canonical" href="https://cybermaak.dev/">
   <meta name="theme-color" content="#0b0e14">
 
   <!-- Open Graph -->
   <meta property="og:type" content="profile">
   <meta property="og:title" content="Mohammed Kamel (cybermaak)">
-  <meta property="og:description" content="Developer · open-source tooling. polytray, maakdown, spi-stats, jq-proxy.">
+  <meta property="og:description" content="Apps and open-source tools. Polytray, Maakdown, and Khatmah.">
   <meta property="og:url" content="https://cybermaak.dev/">
   <meta property="og:image" content="https://cybermaak.dev/assets/avatar.png">
 
@@ -20,11 +20,11 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@cybermaak">
   <meta name="twitter:title" content="Mohammed Kamel (cybermaak)">
-  <meta name="twitter:description" content="Developer · open-source tooling.">
+  <meta name="twitter:description" content="Apps and open-source tools. Polytray, Maakdown, and Khatmah.">
   <meta name="twitter:image" content="https://cybermaak.dev/assets/avatar.png">
 
-  <!-- Favicon (add assets/favicon.png, or swap for your own) -->
-  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <!-- Reuse the public profile image as the site icon. -->
+  <link rel="icon" href="/assets/avatar.png" type="image/png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,7 @@
     "name": "Mohammed Kamel",
     "alternateName": "cybermaak",
     "url": "https://cybermaak.dev/",
-    "description": "Developer building small, sharp open-source tools.",
+    "description": "Developer building apps and open-source tools.",
     "sameAs": [
       "https://github.com/cybermaak",
       "https://x.com/cybermaak",
@@ -178,8 +178,13 @@
 
     @media (max-width: 520px) {
       .body { padding: 26px 22px 22px; }
+      .who h1 { white-space: normal; }
       .repos { grid-template-columns: 1fr; }
       .seg-host, .seg-path { font-size: 11.5px; }
+      .seg-git, .seg-clock { display: none; }
+    }
+    @media (max-width: 360px) {
+      .seg-path { display: none; }
     }
   </style>
 </head>
@@ -218,8 +223,9 @@
       <section aria-label="Repositories">
         <div class="repos-label"><span class="accent">$</span> ls ~/repos</div>
         <div class="repos">
-          <a href="https://cybermaak.dev/polytray/" target="_blank" rel="noopener"><span class="accent">→</span><span class="name">polytray</span><span class="tag">app</span></a>
-          <a href="https://cybermaak.dev/maakdown/" target="_blank" rel="noopener"><span class="accent">→</span><span class="name">maakdown</span><span class="tag">app</span></a>
+          <a href="/polytray/"><span class="accent">→</span><span class="name">polytray</span><span class="tag">app</span></a>
+          <a href="/maakdown/"><span class="accent">→</span><span class="name">maakdown</span><span class="tag">app</span></a>
+          <a href="/khatmah/"><span class="accent">→</span><span class="name">khatmah</span><span class="tag">iOS</span></a>
           <a href="https://github.com/cybermaak/spi-stats" target="_blank" rel="noopener"><span class="accent">→</span><span class="name">spi-stats</span><span class="tag">git</span></a>
           <a href="https://github.com/cybermaak/jq-proxy" target="_blank" rel="noopener"><span class="accent">→</span><span class="name">jq-proxy</span><span class="tag">git</span></a>
         </div>

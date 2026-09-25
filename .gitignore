@@ -1,0 +1,9 @@
+/dist/
+/.site-build-*/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+.agent-tmp/
+output/

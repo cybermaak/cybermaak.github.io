@@ -1,0 +1,119 @@
+{
+  "prepared": "2026-09-23",
+  "design": "Owner-approved Quiet editorial, 04-quiet-editorial-refined.html",
+  "release": "Khatmah 1.1.0; public availability verified 2026-09-24",
+  "assets": [
+    {
+      "source": "staged-media/app-store-badge-ar.svg",
+      "destination": "public/khatmah/assets/app-store-badge-ar.svg",
+      "sha256": "40e4950e78183878be8b9744d0b211e7237975f5597f7038ae825357751eb862"
+    },
+    {
+      "source": "staged-media/app-store-badge.svg",
+      "destination": "public/khatmah/assets/app-store-badge.svg",
+      "sha256": "8f5361e536bf257b9b697c7399f0e4d88ec15a0c9d349c66d2e715d54c05ac28"
+    },
+    {
+      "source": "staged-media/bookmarks-ar.png",
+      "destination": "public/khatmah/assets/bookmarks-ar.png",
+      "sha256": "c16e8ba0e77cbd679d59178e253f886536a974b7a1df46d00a4c473172263359"
+    },
+    {
+      "source": "staged-media/bookmarks.png",
+      "destination": "public/khatmah/assets/bookmarks.png",
+      "sha256": "3e2d25a4db883c7f0437141d0795e71e860a4e1b9231bf5cf932859cba09d917"
+    },
+    {
+      "source": "staged-media/dark-ar.png",
+      "destination": "public/khatmah/assets/dark-ar.png",
+      "sha256": "3764fc3e16565a7f541ca09d6bfbeb1a941b4cdbfdf4a7b8456d88cffe906177"
+    },
+    {
+      "source": "staged-media/dark.png",
+      "destination": "public/khatmah/assets/dark.png",
+      "sha256": "2ab29c0e52fc2eccd20d3203d685f735efacc6d851c8f707ab8a5bafd41c7b7b"
+    },
+    {
+      "source": "staged-media/focus-ar.png",
+      "destination": "public/khatmah/assets/focus-ar.png",
+      "sha256": "dd04af952cb258465ffb55bb04fa147e79d58abe85b06b6c33ae0e226b1d79c5"
+    },
+    {
+      "source": "staged-media/focus-en.png",
+      "destination": "public/khatmah/assets/focus-en.png",
+      "sha256": "0fa58146e668815c51d2b94d14b88f9e71882f55ac7f5a9ecdfca6ad1e1db892"
+    },
+    {
+      "source": "staged-media/icon.jpg",
+      "destination": "public/khatmah/assets/icon.jpg",
+      "sha256": "8fc409b0b9d77094f199b13a0dccebf9d1c6114cb0aa7dd6fd3cfca074bb1f70"
+    },
+    {
+      "source": "staged-media/iphone-18-pro-max-black-landscape.png",
+      "destination": "public/khatmah/assets/iphone-18-pro-max-black-landscape.png",
+      "sha256": "f69c104b8c1852d5b4ef58c0ecf6c5d5699e73d4a526b3f4efb808287350d8d2"
+    },
+    {
+      "source": "staged-media/iphone-18-pro-max-black-portrait.png",
+      "destination": "public/khatmah/assets/iphone-18-pro-max-black-portrait.png",
+      "sha256": "13fc8a8f0bc612f50c00d073b12aefa87bce1e4618fbdd3aa882438ae171e2be"
+    },
+    {
+      "source": "staged-media/landscape-ar.png",
+      "destination": "public/khatmah/assets/landscape-ar.png",
+      "sha256": "fa6b9aa155331ff4f5f2df6f57672d6b0f8e3f3e5de3516750bdb80a2dee98e8"
+    },
+    {
+      "source": "staged-media/landscape-dark-ar.png",
+      "destination": "public/khatmah/assets/landscape-dark-ar.png",
+      "sha256": "fbf1517c545177362510b6ef5fe0454b749add2eccf55819d141125595b9b06c"
+    },
+    {
+      "source": "staged-media/landscape-dark-en.png",
+      "destination": "public/khatmah/assets/landscape-dark-en.png",
+      "sha256": "f53b207b12a9cf5016c75f3babc646b5afee54f99bd8795f6c83683fb7720646"
+    },
+    {
+      "source": "staged-media/landscape.png",
+      "destination": "public/khatmah/assets/landscape.png",
+      "sha256": "56a8a91eb43254bb5159ecff3eb31a6c70a9ab3b61e16556efacc4767110e018"
+    },
+    {
+      "source": "staged-media/page-ar.png",
+      "destination": "public/khatmah/assets/page-ar.png",
+      "sha256": "9da5ebddf69482e6d416b73f3257ba9ecbb86a2fd8a75a03bc2f18e435c68709"
+    },
+    {
+      "source": "staged-media/page.png",
+      "destination": "public/khatmah/assets/page.png",
+      "sha256": "fdfa86e0f0f60c9c1f780132cba22d45f4ecf04658a0a5ee7bdca7b4f98347c5"
+    },
+    {
+      "source": "staged-media/sharing-rendered-preview-ar.png",
+      "destination": "public/khatmah/assets/sharing-rendered-preview-ar.png",
+      "sha256": "69435e48b016bb11e44c019417593015cb0afea8e53c8cb271034cb7e97d2686"
+    },
+    {
+      "source": "staged-media/sharing-rendered-preview.png",
+      "destination": "public/khatmah/assets/sharing-rendered-preview.png",
+      "sha256": "572b99400cdafa54f0ee957fac4c6819533ae7fbbbbbf9b3bd4ad15a78e0ca1c"
+    },
+    {
+      "source": "staged-media/tracking-ar.png",
+      "destination": "public/khatmah/assets/tracking-ar.png",
+      "sha256": "afb542b8577b770d9253672143841443503df6e1a217c518ef80950f4c38279e"
+    },
+    {
+      "source": "staged-media/tracking.png",
+      "destination": "public/khatmah/assets/tracking.png",
+      "sha256": "4a397b41b1fd88984e1f9b70afd25dc628e46412212bf25f90684dcbed35c86c"
+    }
+  ],
+  "publicReleaseVerification": {
+    "verifiedOn": "2026-09-24",
+    "source": "https://itunes.apple.com/lookup?id=6773775419&country=us",
+    "version": "1.1.0",
+    "releasedAt": "2026-09-24T19:36:59Z",
+    "decision": "Reuse all 21 approved assets unchanged; featured claims match the published listing."
+  }
+}

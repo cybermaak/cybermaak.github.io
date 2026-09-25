@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Khatmah — three design proposals</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f0f0ec; color: #232824; font: 16px/1.6 system-ui, sans-serif; }
+    main { max-width: 1104px; margin: auto; padding: 40px 24px 64px; }
+    h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.15; margin: 0 0 16px; letter-spacing: -.03em; }
+    h2 { margin: 0; font-size: 25px; line-height: 1.3; }
+    p { margin: 10px 0; max-width: 760px; }
+    a { color: #255441; text-underline-offset: 3px; }
+    a:focus-visible, summary:focus-visible { outline: 3px solid #aa7025; outline-offset: 5px; }
+    nav { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0; }
+    nav a { display: block; padding: 10px 16px; border: 1px solid #c3c8be; border-radius: 8px; text-decoration: none; background: #fff; }
+    .note { color: #535c52; }
+    .proposals { margin-top: 48px; }
+    section { scroll-margin-top: 20px; margin: 0 0 64px; }
+    .description { margin: 8px 0 20px; }
+    .mock { position: relative; width: 100%; aspect-ratio: 2 / 3; overflow: hidden; border: 1px solid #d6d7ce; box-shadow: 0 18px 50px #27332613; }
+    .mock > .design { display: block; width: 100%; height: 100%; }
+    .brand-icon { position: absolute; width: 3%; height: auto; border-radius: 22%; }
+    .paper .brand-icon { left: 1.75%; top: .9%; }
+    .ink .brand-icon { left: 1.75%; top: 2.08%; }
+    .editorial .brand-icon { left: 3.9%; top: 1.62%; }
+    .paper { background: #faf8f1; }
+    .ink { background: #121612; }
+    .editorial { background: #fcfbf7; }
+    .screen { position: absolute; display: flex; background: #f3ecd8; border-radius: 5%; overflow: hidden; }
+    .screen img { display: block; width: 100%; height: 100%; object-fit: contain; }
+    .paper .first { left: 40.82%; top: 23.63%; width: 18.45%; height: 25.65%; }
+    .paper .second { left: 14.45%; top: 54.82%; width: 17.86%; height: 24.02%; }
+    .ink .first { left: 62.30%; top: 7.96%; width: 18.64%; height: 29.10%; }
+    .ink .second { left: 11.52%; top: 51.05%; width: 16.50%; height: 22.20%; }
+    .editorial .first { left: 62.11%; top: 7.05%; width: 21.87%; height: 32.88%; }
+    .editorial .second { left: 65.14%; top: 53.52%; width: 18.95%; height: 26.35%; }
+    .caption { font-size: 14px; color: #535c52; margin-top: 12px; }
+    details { border-top: 1px solid #c8ccc2; padding-top: 20px; }
+    summary { cursor: pointer; font-weight: 650; }
+    .sources { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; margin-top: 24px; }
+    figure { margin: 0; }
+    .sources img { display: block; width: 100%; height: auto; border-radius: 12px; }
+    figcaption { font-size: 14px; padding-top: 8px; }
+    @media (max-width: 600px) { main { padding: 24px 16px; } .sources { grid-template-columns: repeat(2,minmax(0,1fr)); } .proposals { margin-top: 36px; } }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Three ways to introduce Khatmah.</h1>
+    <p>Each proposal uses the same focused product story and an App Store download. The layouts explore how Khatmah can sit alongside Maakdown and Polytray while keeping its own character.</p>
+    <p class="note">Design review only. The finished marketing page has not been implemented. App screens below are unchanged release captures placed over generated layout concepts.</p>
+    <p><strong>Current direction:</strong> Quiet editorial has been refined with Khatmah’s parchment, ink, and gold palette, genuine 1.1 still images in official Apple device bezels, and English/Arabic language switching. <a href="04-quiet-editorial-refined.html">Open the current responsive proposal</a>.</p>
+    <nav aria-label="Design proposals">
+      <a href="#warm-paper">1 · Warm paper</a>
+      <a href="#ink-and-gold">2 · Ink and gold</a>
+      <a href="#quiet-editorial">3 · Quiet editorial</a>
+    </nav>
+    <p><a href="https://apps.apple.com/us/app/khatmah-%D8%AE%D8%AA%D9%85%D8%A9/id6773775419">Verified App Store listing</a> · Public release 1.0.1, checked 23 September 2026.</p>
+  </header>
+  <div class="proposals">
+    <section id="warm-paper" aria-labelledby="paper-title">
+      <h2 id="paper-title">1 · Warm paper</h2>
+      <p><a href="01-warm-paper.html">Open the responsive Warm paper preview</a></p>
+      <p class="description">The closest fit to Maakdown: a centered introduction, warm paper, a quiet gold action, and an uncomplicated product story. Recommended for the strongest family resemblance.</p>
+      <div class="mock paper">
+        <img class="design" src="01-warm-paper.png" alt="Warm paper proposal: centered headline and download, a reading screenshot, a paper-colored feature band, and a closing download action." width="1024" height="1536">
+        <img class="brand-icon" src="media/icon.jpg" alt="" width="512" height="512">
+        <div class="screen first"><img src="media/page-mode.png" alt="Khatmah Page Mode with the familiar Mushaf layout and Tajweed colors." width="1320" height="2868"></div>
+        <div class="screen second"><img src="media/khatma-tracking.png" alt="Khatma tracking showing saved reading progress and a completed khatma." width="1320" height="2868"></div>
+      </div>
+      <p class="caption">Mobile plan: keep the centered introduction, then stack screenshots and benefits. All media retains its original aspect ratio.</p>
+    </section>
+    <section id="ink-and-gold" aria-labelledby="ink-title">
+      <h2 id="ink-title">2 · Ink and gold</h2>
+      <p><a href="02-ink-and-gold.html">Open the responsive Ink and gold preview</a></p>
+      <p class="description">A dark sibling to Polytray: a strong split hero, warm gold action, and a compact row of practical benefits. The website theme does not imply a dark-mode app feature.</p>
+      <div class="mock ink">
+        <img class="design" src="02-ink-and-gold.png" alt="Ink and gold proposal: dark canvas, left-aligned hero, reading screenshot on the right, benefit strip, and a second app screen beside feature copy." width="1024" height="1536">
+        <img class="brand-icon" src="media/icon.jpg" alt="" width="512" height="512" loading="lazy">
+        <div class="screen first"><img src="media/page-mode.png" alt="The actual light Page Mode from Khatmah’s public release." width="1320" height="2868" loading="lazy"></div>
+        <div class="screen second"><img src="media/khatma-tracking.png" alt="Khatma tracking with progress and saved reading pace." width="1320" height="2868" loading="lazy"></div>
+      </div>
+      <p class="caption">Mobile plan: headline and download first, followed by the reading screenshot; the feature row becomes a short vertical list.</p>
+    </section>
+    <section id="quiet-editorial" aria-labelledby="editorial-title">
+      <h2 id="editorial-title">3 · Quiet editorial</h2>
+      <p><a href="03-quiet-editorial.html">Open the responsive Quiet editorial preview</a></p>
+      <p class="description">The most distinctive direction: spacious serif headings, forest green accents, and open page sections. It feels more like a reading companion while preserving the same download flow.</p>
+      <div class="mock editorial">
+        <img class="design" src="03-quiet-editorial.png" alt="Quiet editorial proposal: a large serif headline on warm off-white, a reading screen at right, a forest-green benefit band, and an open feature section." width="1024" height="1536">
+        <img class="brand-icon" src="media/icon.jpg" alt="" width="512" height="512" loading="lazy">
+        <div class="screen first"><img src="media/page-mode.png" alt="The familiar Madinah page in Khatmah’s Page Mode." width="1320" height="2868" loading="lazy"></div>
+        <div class="screen second"><img src="media/khatma-tracking.png" alt="Khatma tracking with an active khatma and a completed khatma." width="1320" height="2868" loading="lazy"></div>
+      </div>
+      <p class="caption">Mobile plan: shorten the headline’s line breaks, stack the hero, and keep the green benefit band as a calm transition.</p>
+    </section>
+  </div>
+  <details>
+    <summary>Shared copy and genuine app media</summary>
+    <p><strong>A quiet place to read.</strong> Read the Quran, keep your place, and continue your khatma at your own pace.</p>
+    <p><strong>Download on the App Store.</strong> Free for iPhone · iOS 17 or later.</p>
+    <p>Offline reading · No account · No ads.</p>
+    <p><strong>Read in a way that suits you.</strong> The familiar Madinah page, or a focused view that follows the line you are reading.</p>
+    <p><strong>Continue with confidence.</strong> Track your khatmas and return to your saved reading places.</p>
+    <p><strong>Your next page is waiting.</strong> Download on the App Store.</p>
+    <p>Navigation is limited to the App Store and All apps. The final page will use the published app icon and reviewed screenshots; the review images are not production UI.</p>
+    <div class="sources">
+      <figure><img src="media/page-mode.png" alt="Full original Page Mode screenshot" width="1320" height="2868" loading="lazy"><figcaption>Page Mode</figcaption></figure>
+      <figure><img src="media/focus-mode.png" alt="Full original Focus Mode screenshot" width="1320" height="2868" loading="lazy"><figcaption>Focus Mode</figcaption></figure>
+      <figure><img src="media/khatma-tracking.png" alt="Full original khatma tracking screenshot" width="1320" height="2868" loading="lazy"><figcaption>Khatma tracking</figcaption></figure>
+      <figure><img src="media/bookmarks.png" alt="Full original bookmarks screenshot" width="1320" height="2868" loading="lazy"><figcaption>Bookmarks</figcaption></figure>
+    </div>
+  </details>
+</main>
+</body>
+</html>
