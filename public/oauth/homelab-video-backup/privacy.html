@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="How MAAK Homelab Video Backup uses Google Drive data.">
+  <link rel="canonical" href="https://maaktech.dev/oauth/homelab-video-backup/privacy.html">
+  <link rel="stylesheet" href="styles.css">
+  <title>Privacy policy | MAAK Homelab Video Backup</title>
+</head>
+<body>
+  <main>
+    <p><a href="home.html">MAAK Homelab Video Backup</a></p>
+    <h1>Privacy policy</h1>
+    <h2>Data and purpose</h2>
+    <p>The backup uses the Google Drive <code>drive.file</code> permission to create and manage its backup folders and video copies in the operator’s Drive. It reads file names and paths, sizes, timestamps, checksums, and Drive file identifiers to compare copies and verify results. It can download the backed-up videos to verify or restore them. It also checks the authorized account and available storage before using Drive.</p>
+    <h2>Storage and sharing</h2>
+    <p>Backed-up videos and their file metadata are stored in the operator’s Google Drive. The operator’s backup host keeps OAuth credentials in a protected local configuration and retains job logs to diagnose backup failures. The operator keeps a recovery copy of the application credentials in a private 1Password vault. The backup sends files to Google Drive for storage and retrieval and does not share them with other users.</p>
+    <h2>Access and retention</h2>
+    <p>The operator can revoke the application’s access in their Google Account and remove backup files separately in Drive. The backup leaves existing Drive copies in place when a local video is removed. The operator can remove local credentials and logs when retiring the backup.</p>
+    <p>For questions about this policy, use the support address on the application’s Google consent screen.</p>
+  </main>
+</body>
+</html>
